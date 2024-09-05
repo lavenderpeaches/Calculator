@@ -44,6 +44,10 @@ function display(event){
         if(text[0] != "-"){
             text = "-" + text;
         }
+        else if (text[0]=="-"){
+            let dummyString = text.slice(1);
+            text = dummyString;
+        }
         return textDiv.textContent = text;
     }
 
